@@ -14,7 +14,7 @@ $ cmdtoarr mc -t ${PWD}/sample.template -p ${PWD}/sample.params -o ${PWD}/sample
 ```
 
 ## Build From Source & Install
-If you are building from source you will need to have the [Rust language ](https://rustup.rs/) application suite installed and download the [source code](https://webbrandon.github.io/mc).  I have built and tested for linux and OSX only.  If you try on Windows please let me know how it goes.
+If you are building from source you will need to have the [Rust language ](https://rustup.rs/) application suite installed and download the [source code](https://webbrandon.github.io/cmdtoarr).  I have built and tested for linux and OSX only.  If you try on Windows please let me know how it goes.
 
 Stable build last compiled with with [Rust version 1.28.0](https://rustup.rs/).
 
