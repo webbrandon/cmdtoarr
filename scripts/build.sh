@@ -1,6 +1,5 @@
 #!/bin/bash
-
-cargo build
-cargo install
+printf "Building"
+cargo build -verbose
 
 exit 0

@@ -18,8 +18,17 @@ If you are building from source you will need to have the [Rust language ](https
 
 Stable build last compiled with with [Rust version 1.28.0](https://rustup.rs/).
 
+I use another application I have in development called [Master of Ceremony ( mc )](webbrandon.github.io/mc). 
+
 ```bash
-cargo install
+mc
+```  
+  
+If your not using `mc` you can use the build script it would use.
+
+```bash
+sh ./scripts/build.sh
+sh ./scripts/install.sh
 ```
 
 ## License  

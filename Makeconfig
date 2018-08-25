@@ -6,3 +6,5 @@ metadata:
 specs:
   script:
     file: ./scripts/build.sh
+  post-script:
+    file: ./scripts/install.sh
