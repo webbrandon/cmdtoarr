@@ -1,7 +1,8 @@
 use std::env;
-use std::io::{self, Write};
+use std::str;
+use std::io::{self, Write, BufRead};
 
-pub fn out_term(object: &Vec<String>) {
+pub fn out_term(object: &Vec<&str>) {
     writeln!(
         &mut io::stdout(),
         "{:?}",
@@ -9,12 +10,24 @@ pub fn out_term(object: &Vec<String>) {
     ).ok();
 }
 
+fn convert(cmd: &String ) {
+    let v: Vec<&str> = cmd.trim().split(' ').collect();
+    out_term(&v);
+}
+
 fn main() {
     let mut args = env::args();
-    let mut response:Vec<String> = Vec::new();
-    args.next();
-    for argument in args {
-        response.push(argument);
+    
+    match &args.nth(1) {
+        Some(x) => {
+            x.trim();
+            convert(x);
+        },
+        None => {
+            let stdin = io::stdin();
+            for x in stdin.lock().lines() {
+                convert(&x.unwrap());
+            }
+        }
     }
-    out_term(&response)
 }

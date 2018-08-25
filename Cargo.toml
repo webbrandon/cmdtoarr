@@ -5,3 +5,4 @@ description = "A tool for converting a command and arguments into a string array
 authors = ["Brandon Clark <webmind@hotmail.com>"]
 
 [dependencies]
+regex = "1"
