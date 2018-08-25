@@ -1,0 +1,8 @@
+api: makeconfig
+version: beta/1
+metadata:
+  name: cmdtoarr
+  description: "This is a command-line tool for converting a command and arguments into a string array that can be used in configuration files."
+specs:
+  script:
+    file: ./scripts/build.sh
